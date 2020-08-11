@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- External CSS Libraries - Bootstrap Scripts (For stylistic purposes) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+  <!--  scripts -->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/contact.js"></script>
+
+  <!-- custom font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>HOME</title>
+
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+
+
+  <div class="top-container">
+
+    <a href="index.html">
+      <h1><span style="color: darkgrey;">art</span>1c1e</h1>
+    </a>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  </div>
+
+  <nav class="navigation-bar">
+
+    <a class="#main" href="index.html">HOME</a>
+    <a href="#shop">SHOP</a>
+    <a href="info.html">INFO</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="reflect.html">REFLECT</a>
+    <a style="color: green;" href="#cart">CART</a>
+  </nav>
+
+  <section id="form">
+    <div class="container-contact">
+      <div>
+        <p style="font-size: large;">647-777-777</p>
+        <p style="font-size: large;">46 ART ST.</p>
+        <p style="font-size: large;">@a1e</p>
+      </div>
+      <br>
+
+      <h3 style="font-weight: lighter;">PLEASE FILL OUT THE FORMS BELOW.</h2><br>
+        <form action="https://httpbin.org/post" method="POST" id="contact-form" novalidate>
+          <!-- Row #1 -->
+          <div class="form-row">
+            <!-- First Name -->
+            <div class="form-group col-md-6">
+              <label for="fname">First Name</label>
+              <input placeholder="First Name" id="fname" class="form-control" name="fname" autocomplete="given-name"
+                type="text" autofocus tabindex="1" required>
+              <!-- Message appears for invalid/empty boxes -->
+              <div class="invalid-feedback">Enter your first name.</div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group col-md-6">
+              <label for="lname">Last Name</label>
+              <input placeholder="Last Name" id="lname" class="form-control" name="lname" type="text" tabindex="2"
+                required>
+              <div class="invalid-feedback">Enter your last name.</div>
+            </div>
+          </div>
+
+          <!-- Row #2 -->
+          <div class="form-group">
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input placeholder="Email" id="email" class="form-control" name="email" autocomplete="email" type="email"
+              tabindex="3" required>
+            <div class="invalid-feedback">Enter your email (i.e johndoe@email.com).</div>
+          </div>
+
+          <!-- Row #3 -->
+          <div class="form-group">
+            <!-- Address -->
+            <label for="address">Address</label>
+            <input placeholder="Address" id="address" name="address" class="form-control" autocomplete="street-address"
+              type="text" tabindex="4" required>
+            <div class="invalid-feedback">Enter your address.</div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <!-- City -->
+              <label for="city">City</label>
+              <input id="CityInfo" class="custom-select" type="text" list="cityList" name="CityInfo" placeholder="City"
+                tabindex="5" required>
+              <!-- Data list for popular cities in canada -->
+              <datalist id="cityList">
+                <option value="Toronto"></option>
+                <option value="Whitehorse"></option>
+                <option value="Regina"></option>
+                <option value="Victoria"></option>
+                <option value="Calgary"></option>
+                <option value="Ottawa"></option>
+                <option value="Edmonton"></option>
+                <option value="Saskatoon"></option>
+                <option value="St. John's"></option>
+                <option value="Niagara Falls"></option>
+                <option value="Halifax"></option>
+                <option value="London"></option>
+                <option value="Vancouver "></option>
+                <option value="Quebec City"></option>
+                <option value="Montreal"></option>
+                <option value="Winnipeg"></option>
+              </datalist>
+              <div class="invalid-feedback">Enter your city.</div>
+            </div>
+            <div class="form-group col-md-4">
+              <!-- Province -->
+              <label for="Province">Province</label>
+              <select id="Province" class="custom-select" name="Province" tabindex="6">
+                <option selected>Ontario</option>
+                <option>Nunavut</option>
+                <option>Quebec</option>
+                <option>Northwest Territories</option>
+                <option>British Columbia</option>
+                <option>Alberta</option>
+                <option>Saskatchewan</option>
+                <option>Manitoba</option>
+                <option>Yukon</option>
+                <option>Newfoundland and Labrador</option>
+                <option>New Brunswick</option>
+                <option>Nova Scotia</option>
+                <option>Prince Edward Island</option>
+              </select>
+              </select>
+              <div class="invalid-feedback">Enter your province.</div>
+            </div>
+
+            <div class="form-group col-md-2">
+              <!-- Postal Code -->
+              <label for="postalcode">Postal code</label>
+              <input placeholder="Postal Code" id="posteCode" name="posteCode" class="form-control" type="text"
+                autocomplete="postal-code" pattern="^[a-zA-Z]\d[a-zA-Z] ?\d[a-zA-Z]\d$" tabindex="7" required />
+              <div class="invalid-feedback">Enter your postal code.</div>
+            </div>
+          </div>
+
+          <!-- Row #4 -->
+          <div class="form-row">
+            <!-- Stores radio options -->
+            <div class="col mb-3" id="radioOptions">
+              <!-- Radio question -->
+              <div class="custom-control custom-radio custom-control-inline">
+                <input id="radioQuestion" name="radioControl" type="radio" class="custom-control-input" tabindex="10"
+                  checked required />
+                <label class="custom-control-label" for="radioQuestion">Question</label>
+              </div>
+              <!-- Radio comment -->
+              <div class="custom-control custom-radio custom-control-inline">
+                <input id="radioComment" name="radioControl" type="radio" class="custom-control-input" />
+                <label class="custom-control-label" for="radioComment">Comment</label>
+              </div>
+              <!-- Radio order problem -->
+              <div class="custom-control custom-radio custom-control-inline">
+                <input id="radioOrder" name="radioControl" type="radio" class="custom-control-input" />
+                <label class="custom-control-label" for="radioOrder">Order Problem</label>
+              </div>
+            </div>
+          </div>
+          <!-- Order Number: appears when order problem is clicked -->
+          <div class="form-row" id="OrderNumberBox" hidden>
+            <div class="col-md-4 mb-3">
+              <label for="orderNumInfo">Order Number</label>
+              <input name="orderNumInfo" id="orderNumInfo" class="form-control" type="text" placeholder="Order Number"
+                tabindex="11" />
+              <div class="invalid-feedback">Enter your postal code.</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <!-- Message box -->
+              <label for="messageInfo">Message</label>
+              <textarea name="messageInfo" id="messageInfo" class="form-control" rows="6" tabindex="12" required>
+                        </textarea>
+            </div>
+          </div>
+          <input type="text" name="nameHidden" id="nameHidden" value="GioLucero" hidden />
+
+          <input type="submit" class="btn btn-dark btn-lg button" value="Submit" tabindex="14" />
+        </form>
+    </div>
+  </section>
+
+
+
+
+  <div class="footer-container">
+    <h2 style="padding-bottom: 20px;" class="cta-text">SUBSCRIBE TO OUR NEWSLETTER</h2>
+    <form action="https://formspree.io/meqrnngl" method="POST">
+      <label class="email-label">
+        <input placeholder="someone@email.com" type="email" name="_replyto" required>
+      </label>
+      <input type="submit" value="submit">
+    </form>
+    <h2>© A11E 2020</h2>
+  </div>
+
+
+
+
+  <!--
+      Introduction
+      ------------
+
+      You are asked to create an online store in HTML, CSS, and JavaScript.
+      Please implement a store with all of the following requirements.
+
+      You may remove this comment and place all your HTML in this file.
+
+      Requirements:
+
+      1. Include a header across the top with your store's name, a logo,
+      and use a different background colour, web font, etc. Your header should
+      include info about what the store is, what it sells, etc.  Use some images
+      to try and draw the user in. NOTE: place all your site's images in the
+      `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture of the item
+        - the item's name or title
+        - a complete description of the item
+        - a category (i.e., each item must belong to one or more categories)
+        - a price in Canadian Dollars
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A category menu or "sidebar" (left, right, or top depending on your design)
+      showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the store items, a footer with the name of the store, any relevant
+      links you need to give users.  Include links and icons to any social media
+      for your store (Facebook, Twitter, etc). NOTE: you don't have to create such
+      accounts, but you can provide links to imaginary accounts.
+
+      5. Use at least two different Web Fonts for your store.  The titles should
+      be different from any regular text.  Use a free font service like
+      https://fonts.google.com/ or any other that you choose.  You can also
+      experiment with different font sizes and colours to draw attention toward
+      or away from various parts of your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Your images shouldn't be larger than 1M in size.  Users don't want to
+      download 10s or 100s of megabytes of data, especially on mobile.  You can use an
+      online tool like https://squoosh.app/ to help you reduce images.  You will
+      lose marks if your images aren't optimized for the web.
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your code is properly indented and commented, and that you've used
+      good naming practices for variables, functions, ids, classes, etc.
+
+      12. Have fun!  Build something you'd be proud to show future employers in
+      interviews.  Take the time to properly design and implement a beautiful and
+      functional storefront.  Maybe it will inspire you to start your own online business?
+    -->
+</body>
+
+</html>

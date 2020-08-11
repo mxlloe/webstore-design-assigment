@@ -140,7 +140,11 @@ h1:hover {
   padding-right: 30px;
 }
 
-
+/*CONTACTHTML*/
+.container-contact {
+  text-align: center;
+  padding: 7% 15%;
+}
 
 
 
@@ -156,7 +160,6 @@ h1:hover {
 
 }
 
-/*INFO HTML*/
 
 .info-container {
   padding-top: 100px;
